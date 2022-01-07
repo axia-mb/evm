@@ -10,7 +10,7 @@ edition = "2018"
 
 [dependencies]
 primitive-types = { version = "0.10", default-features = false }
-codec = { git = "https://github.com/axia-tech/axia-scale-codec", package = "axia-scale-codec", default-features = false, features = ["derive", "full"], optional = true }
+codec = { package = "parity-scale-codec", default-features = false, features = ["derive", "full"], optional = true }
 serde = { version = "1.0", default-features = false, features = ["derive"], optional = true }
 scale-info = { version = "1.0.0", default-features = false, features = ["derive"] }
 # Work-around for https://github.com/myrrlyn/funty/issues/3
